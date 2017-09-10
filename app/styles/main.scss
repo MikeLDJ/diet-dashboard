@@ -1,0 +1,9 @@
+@import './../../node_modules/normalize.css/normalize';
+
+h1 {
+  &:after {
+    background: #cba;
+    content: 'css works!!!';
+    display: block;
+  }
+}
