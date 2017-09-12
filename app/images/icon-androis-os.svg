@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="svg4841" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1">
+  <g id="layer1">
+    <g id="g5783">
+      <g id="g5752" fill="#bababa" transform="translate(12 4.857) scale(.0697)">
+        <use id="use5754" width="100%" height="100%" x="0" y="0" stroke="#ffffff" stroke-width="14.4" xlink:href="#b"/>
+        <use id="use5756" width="100%" height="100%" x="0" y="0" transform="scale(-1 1)" xlink:href="#a"/>
+        <g id="a" stroke="#ffffff" stroke-width="7.2">
+          <rect id="rect5759" width="13" height="86" x="14" y="-86" transform="rotate(29)" rx="6.5"/>
+          <rect id="c" width="48" height="133" x="-143" y="41" rx="24"/>
+          <use id="use5762" width="100%" height="100%" x="85" y="97" xlink:href="#c"/>
+        </g>
+        <g id="b">
+          <ellipse id="ellipse5765" cx="0" cy="41" ry="84" rx="91"/>
+          <rect id="rect5767" width="182" height="182" x="-91" y="20" rx="22"/>
+        </g>
+      </g>
+      <g id="g5769" fill="#ffffff" stroke="#ffffff" stroke-width="7.2" transform="translate(12 4.857) scale(.0697)">
+        <path id="path5771" d="M-95 44.5H95"/>
+        <circle id="circle5773" cx="-42" cy="0" r="4"/>
+        <circle id="circle5775" cx="42" cy="0" r="4"/>
+      </g>
+    </g>
+  </g>
+  <style id="style5137" type="text/css">
+    .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#BABABA;}
+  </style>
+  <style id="style5642" type="text/css">
+    .st0{fill:#FFFFFF;}
+  </style>
+</svg>

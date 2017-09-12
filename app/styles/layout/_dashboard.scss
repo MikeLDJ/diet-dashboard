@@ -1,0 +1,13 @@
+// dashboard
+
+.dashboard {
+  &__container {
+    max-width: $width-main-container;
+    margin: 1rem auto 0;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,24 @@
+// icons
+
+.icon {
+  &__options-selector {
+    display: inline-block;
+    fill: $color-theme-secondary;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+
+    &--disabled {
+      fill: $color-icon;
+
+      &::after {
+        height: 2rem;
+        width: 2rem;
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: url(./../images/icon-disabled.svg);
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// period-selector
+
+.period-selector {
+  font-size: 3em;
+  color: $color-theme;
+  font-weight: normal;
+  line-height: 2.75rem;
+  margin: 0 2.7rem;
+
+  &__container {
+    display: flex;
+    height: 2.75rem;
+    margin-left: 4%;
+    padding-top: .8rem;
+    width: 23rem;
+  }
+
+  &__control {
+    height: 2.75rem;
+    line-height: 2.75rem;
+    margin-top: -.25rem;
+    width: 1.5625rem;
+    border: 1px solid $color-icon;
+    border-radius: .4rem;
+    position: relative;
+  }
+}

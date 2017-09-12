@@ -1,0 +1,60 @@
+// progress-bar
+
+.progress-bar {
+  counter-reset: item;
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-top: 24px;
+  padding: 0;
+
+  &__item {
+    color: $color-font-main;
+    display: inline-block;
+    font-size: 9px;
+    position: relative;
+    width: 16px;
+    text-align: center;
+
+    &:before {
+      content: counter(item) '';
+      counter-increment: item;
+    }
+  }
+
+  &__dot {
+    background-color: $color-icon;
+    border: 2px solid;
+    border-color: $color-icon;
+    border-radius: 50%;
+    height: 10px;
+    left: 50%;
+    position: absolute;
+    top: -16px;
+    transform: translateX(-50%);
+    width: 10px;
+
+    &--done {
+      background-color: $color-theme-secondary;
+      border-color: $color-theme-secondary;
+    }
+
+    &--active {
+      background-color: $color-background-main;
+    }
+
+    &:after {
+      background-color: $color-icon;
+      content: '';
+      height: 2px;
+      top: 2px;
+      right: 8px;
+      position: absolute;
+      width: 11px;
+
+      .progress-bar__item:first-of-type & {
+        width: 0;
+      }
+    }
+
+  }
+}

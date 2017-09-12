@@ -1,0 +1,15 @@
+// arrows
+
+.arrow {
+  content: url(../images/icon-arrow.svg);
+
+  &--left {
+    transform: rotateY(180deg);
+  }
+
+  &__control {
+    height: 1.125rem;
+    width: .625rem;
+    margin: .75rem .4rem;
+  }
+}

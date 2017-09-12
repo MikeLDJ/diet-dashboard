@@ -1,0 +1,16 @@
+// options-selector
+
+.options-selector {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    cursor: pointer;
+    display: inline-block;
+
+    + .options-selector__item {
+      margin-left: .4rem;
+    }
+  }
+}

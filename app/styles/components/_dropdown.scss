@@ -1,0 +1,54 @@
+// dropdown
+
+.dropdown {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  max-width: 12rem;
+
+  &__item {
+    list-style: none;
+    visibility: hidden;
+    position: absolute;
+    padding-right: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      a {
+        color: $color-theme;
+      }
+    }
+
+    &.active {
+      position: relative;
+      visibility: visible;
+
+      &::after {
+        content: url(../images/icon-chevron.svg);
+        position: absolute;
+        right: 0;
+        top: .4rem;
+        width: .625rem;
+      }
+    }
+
+    a {
+      color: $color-font-nav;
+      display: flex;
+      font-size: .9375em;
+      line-height: 2.1875rem;
+      text-decoration: none;
+    }
+  }
+
+  &__avatar {
+    height: 2.1875rem;
+    margin-right: 1rem;
+
+    img {
+      border-radius: 50%;
+      box-shadow: 1px 1px 4px 1px $color-icon;
+      height: 1.8rem;
+    }
+  }
+}

@@ -5,10 +5,206 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/main.css">
-  <title>Get Response | </title>
+  <title>Get Response | Recuitment Task</title>
 </head>
 <body>
-  <h1>html works!</h1>
+
+  <nav class="nav">
+    <div class="nav__container">
+      <div class="nav__logo"></div>
+      <ul class="nav__main">
+        <li class="nav__item active"><a class="nav__link" href="#">Dashboard</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Recipes</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Challenge</a></li>
+      </ul>
+      <ul class="nav__user dropdown in">
+        <li class="dropdown__item active">
+          <a href="#">
+            <span class="dropdown__avatar">
+              <img src="images/avatar.jpg" alt="">
+            </span>
+            Olivia Wilde
+            <span class="dropdown__arrow-d"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="dashboard__container">
+      <div class="dashboard__header">
+        <div class="progress-bar__container">
+          <h2 class="title title--legend">Your 12 week progress</h2>
+          <ol class="progress-bar">
+            <li class="progress-bar__item"><span class="progress-bar__dot progress-bar__dot--done"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot progress-bar__dot--done"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot progress-bar__dot--done"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot progress-bar__dot--done"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot progress-bar__dot--done"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot progress-bar__dot--done"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot progress-bar__dot--active"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot"></span></li>
+            <li class="progress-bar__item"><span class="progress-bar__dot"></span></li>
+          </ol>
+        </div>
+        <div class="period-selector__container">
+          <a href="#" class="period-selector__control period-selector__control--left"><span class="arrow arrow__control  arrow--left">left</span></a>
+          <h1 class="period-selector">Week <span class="period-selector__period">7</span></h1>
+          <a href="#" class="period-selector__control period-selector__control--right"><span class="arrow arrow__control arrow--right">right</span></a>
+        </div>
+        <div class="options-selector__container">
+          <h2 class="title title--legend">Select Your protein options</h2>
+          <ul class="options-selector">
+            <li class="options-selector__item">
+              <a class="icon icon__options-selector" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" version="1.1">
+                  <path fill-opacity="1" d="M14.303 2.54c-1.298.122-2.148.634-2.658 1.344-.406-.34-.897-.545-1.43-.545-1.38 0-2.5 1.342-2.5 3 .014.554.18 1.044.44 1.454-.612.64-1.168 1.634-1.61 3.088 0 2.393 1.665 4.33 3.76 4.472-2.63 4.453-7.617 9.53-7.617 9.53 2.093 1.39 3.645 2.933 5.302 4.576 2.715-3.663 7.542-6.07 9.946-7.447.546 1.985 2.12 3.43 4.003 3.43 2.333 0 4.226-2.207 4.226-4.93 0-.582-.1-1.133-.26-1.65 1.955-.51 3.406-2.312 3.407-4.473 0-2.558-2.023-4.63-4.52-4.63-.377 0-.738.058-1.088.147.024-.158.05-.316.05-.48 0-1.805-1.484-3.268-3.316-3.268-.89.026-1.63.432-2.163 1.028.058-.157.118-.3.174-.468 0-2.308-1.857-4.18-4.147-4.18zm-2.16 18.16c-.002 0 .027-1.387.025-1.387.954-1.41 2.036-3.513 2.236-5.513-.32-1.227 1.397 1.68 1.562 1.593-1.75 2.17-1.705 1.928-3.823 5.307zm6.17-2.68c-.36.713-.517 1.31-.53 2.194-.668-.045-2.19.666-2.974.685 1.06-1.097 2.78-2.565 3.502-2.88z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="options-selector__item">
+              <a class="icon icon__options-selector" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" version="1.1">
+                  <g fill-opacity="1">
+                    <path d="M14.125 21.737c0 .873-.783 1.58-1.75 1.58-.965 0-1.75-.707-1.75-1.58 0-.873.785-1.58 1.75-1.58.967 0 1.75.707 1.75 1.58zm6.664-3.716c0 1.31-1.04 2.37-2.32 2.37s-2.32-1.05-2.32-2.36c0-1.3 1.03-2.36 2.31-2.36s2.31 1.06 2.31 2.36zm-9.29-7.05c0 .97-.8 1.76-1.79 1.76s-1.79-.78-1.79-1.75.8-1.75 1.78-1.75c.99 0 1.786.79 1.786 1.76zM3.78 23.51l-.252 3 11.96-.032s6.736-1.442 6.736-9.442c0-10-10.063-11.345-10.063-11.345l-7.47-.04-.46 11.45s3.66.16 3.66 3.16-4.09 3.26-4.09 3.26z"/>
+                    <path fill-rule="evenodd" d="M18.502 26.464s5.095-2.148 5.095-9.148S19.85 6.906 14.934 5.62l6.452-.125s7.594 2.3 7.053 11.284c-.5 8.22-5.57 9.41-5.57 9.41-1.66.37-2.93.27-4.37.27z"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="options-selector__item">
+              <a class="icon icon__options-selector" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" version="1.1">
+                  <g fill-opacity="1" fill-rule="evenodd">
+                    <path d="M9.396 5.055c3.496-.45 6.603 1.96 10.506 3.318 2.91.967 5.147.733 6.454.58 1.306-.152 2.368.174 3.338 1.14.97.968 1.787 2.057 1.787 3.99 0 1.368.4 5.538-2.45 8.378-2.47 2.47-6.21 4.53-14.94 4.53-5.8.19-13.46-2.32-13.58-8.52 0-1.93-.15-6.26 1.61-8.71C3.88 7.32 5.9 5.51 9.4 5.06zm15.01 16.072c3.757-2.163 6.03-5.32 5.44-8.448-.21-1.12-1.585-2.32-2.602-2.22-1.692.16-5.45-.08-7.055-.71-2.61-1.01-2.87-1.01-6.61-2.75-1.98-.93-4.33-.82-6.29-.118-1.41.503-3.05 1.99-3.8 3.277-1.28 2.19-2.05 4.363-1.18 7.105.75 2.353 2.67 3.18 5.264 4.67 2.592 1.492 13.06 1.336 16.82-.826z"/>
+                    <path d="M13.817 15.265c1.455-.484 5.266.315 4.146 2.25-1.372 2.367-3.37.986-4.003.59-1.277-.8-1.598-2.357-.143-2.84zm-.888-6.647c-1.4 2.018-5.25 4.623-3.64 4.997 1.61.374 4.58-2.848 5.54-4.152 3.95 2.254 4.85 4.896 5.37 6.83 1.56 5.802-8.11 4.623-11.86 3.633-2.95-.83-4.004-1.574-4.004-3.736 0-1.934.306-4.082 2.696-6.93 2.4-2.823 4.125-2.393 5.88-.642zm9.63 7.227c.24 1.076.12 2.648.09 3.297-.03.65 6.54-3.97 5.57-5.903-.97-1.94-7.007-1.03-7.007-.43 0 .6 1.1 1.95 1.336 3.03z"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="options-selector__item">
+              <a class="icon icon__options-selector icon__options-selector--disabled" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" version="1.1">
+                  <path fill-opacity="1" d="M12.617 6c-2.254 0-4.384.938-5.776 2.544-3.09.933-5.934 3.333-6.34 6.2 1.615.08 2.797.485 2.8.96 0 .47-1.16.874-2.757.96.463 2.6 2.55 4.76 5.418 5.938 1.74-2.094 2.956-4.99 3.452-8.228.08.746.12 1.5.12 2.255h.003c-.003 2.337-.377 4.638-1.088 6.7.204.038.415.06.623.088.34 1.694 1.554 2.58 3.762 2.582.383 0 1.186-.207 1.557-.284-.538-.587-.587-.757-.59-1.477.002-.35.07-.698.204-1.032 3.813-.892 5.388-2.292 7.067-5.064.113-.424.687-.822 1.457-.85.62 0 1.403.286 1.61.747.734 2.368 3.33 2.74 7.042 3.16-2.438-1.47-3.823-3.526-3.828-5.68.006-2.25 1.518-4.387 4.148-5.865-2.974.675-6.664 2.05-7.69 4.497-.17.3-.673.502-1.243.503-.604.023-1.445-.222-1.768-.67-.292-.32-.572-.61-.854-.898.012-.143.018-.287.02-.43 0-3.676-3.29-6.657-7.35-6.657zm-.195 1.596h.03c3.03 0 5.705 1.876 6.59 4.617-2.352-2.17-4.656-3.297-8.414-4.008-.29-.045-.588-.067-.89-.076.85-.346 1.76-.528 2.684-.534zm-8.46 5.61a1.084.76 0 0 1 1.084.76 1.084.76 0 0 1-1.084.763 1.084.76 0 0 1-1.084-.763 1.084.76 0 0 1 1.084-.762z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="options-selector__item">
+              <a class="icon icon__options-selector icon__options-selector--disabled" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" version="1.1">
+                  <g fill-opacity="1">
+                    <path d="M2.09 22.204a8.566 8.125 0 0 1 4.035 3.824H27.4a8.566 8.125 0 0 1 3.9-3.777v-.044H2.09zM3.742 7.798c-.704 0-1.056.448-1.152.976-.096.528.07.777-.473.88-.543.103-1.416.5-1.416 1.232.004.692 1.07 1.41 2.115 1.41s1.34.857 2.648 1.49c.692-1.633.692-1.633 1.757-2.37.502-.18-2.11-1.272-2.11-1.794 0-.687-.66-1.824-1.366-1.824zm4.256-1.826c-.67 0-1.157.503-1.157 1.082-.33.144-.626.467-.706.817-.08.35.576.844 1.288.844.67 0 1.24.58 2.2 1.19.35-.347 1.12-.95 1.624-1.374-.58-.436-1.036-.553-1.617-1.513-.57-.94-1.295-1.044-1.63-1.044z"/>
+                    <path d="M9.526 11.692c-4.956 0-3.005 4.335-1.943 6.388.938.947-3.062.947-2.202 2.97l17.68-.023h4.758c-.585-5.07-5.264-8.92-10.844-8.92-1.072.003-2.138.15-3.164.438 1.35.932 2.47 2.26 3.245 3.855-.213-.047-.63.002-.847-.034-1.33-2.72-4.128-4.518-6.68-4.674zM13.79 8.92a5.24 7.18 0 0 0-3.255 1.554 7.923 7.45 0 0 1 2.392 1.34 10.165 6.282 0 0 1 3.704-.432 10.165 6.282 0 0 1 1.135.043A5.24 7.18 0 0 0 13.79 8.92z"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard__body table">
+        <div class="table__column table__column--lead">
+          <div class="table__row table__row--header"></div>
+          <div class="table__row table__row--1">6:00 AM</div>
+          <div class="table__row table__row--2">9:00 AM</div>
+          <div class="table__row table__row--3">12:00 PM</div>
+          <div class="table__row table__row--4">3:00 PM</div>
+          <div class="table__row table__row--5">6:00 PM</div>
+          <div class="table__row table__row--small table__row--6"></div>
+          <div class="table__row table__row--small table__row--7">Workout <span class="caret caret--right"></span></div>
+        </div>
+        <div class="table__column" id="day-64">
+          <div class="table__row table__row--header">Day 64</div>
+          <div class="table__row table__row--1" data-background="">Bod•ē Shake</div>
+          <div class="table__row table__row--2">Ham and Swiss Roll Ups</div>
+          <div class="table__row table__row--3">Turkey Melt</div>
+          <div class="table__row table__row--4">Bod•ē Burn with Mozzarella and Tomato Slices</div>
+          <div class="table__row table__row--5">Turkey Melt</div>
+          <div class="table__row table__row--small table__row--6">Low-carb</div>
+          <div class="table__row table__row--small table__row--7"></div>
+        </div>
+        <div class="table__column" id="day-65">
+          <div class="table__row table__row--header">Day 65</div>
+          <div class="table__row table__row--1" data-background="">Bod•ē Shake</div>
+          <div class="table__row table__row--2">Ham and Swiss Roll Ups</div>
+          <div class="table__row table__row--3">Turkey Melt</div>
+          <div class="table__row table__row--4">Bod•ē Burn with Mozzarella and Tomato Slices</div>
+          <div class="table__row table__row--5">Turkey Melt</div>
+          <div class="table__row table__row--small table__row--6">Low-carb</div>
+          <div class="table__row table__row--small table__row--7"></div>
+        </div>
+        <div class="table__column" id="day-66">
+          <div class="table__row table__row--header">Day 66</div>
+          <div class="table__row table__row--1" data-background="">Bod•ē Shake</div>
+          <div class="table__row table__row--2">Grilled Steak (HC)</div>
+          <div class="table__row table__row--3" data-background="">Bod•ē Shake</div>
+          <div class="table__row table__row--4">Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray</div>
+          <div class="table__row table__row--5">Garlic Lime Chicken (HC)</div>
+          <div class="table__row table__row--small table__row--6">High-carb</div>
+          <div class="table__row table__row--small table__row--7"></div>
+        </div>
+        <div class="table__column" id="day-67">
+          <div class="table__row table__row--header">Day 67</div>
+          <div class="table__row table__row--1" data-background="">Bod•ē Shake</div>
+          <div class="table__row table__row--2">Ham and Swiss Roll Ups</div>
+          <div class="table__row table__row--3">Turkey Melt</div>
+          <div class="table__row table__row--4">Bod•ē Burn with Mozzarella and Tomato Slices</div>
+          <div class="table__row table__row--5">Turkey Melt</div>
+          <div class="table__row table__row--small table__row--6">Low-carb</div>
+          <div class="table__row table__row--small table__row--7"></div>
+        </div>
+        <div class="table__column" id="day-68">
+          <div class="table__row table__row--header">Day 68</div>
+          <div class="table__row table__row--1" data-background="">Bod•ē Shake</div>
+          <div class="table__row table__row--2">Ham and Swiss Roll Ups</div>
+          <div class="table__row table__row--3" data-background="">Bod•ē Shake</div>
+          <div class="table__row table__row--4">Bod•ē Burn with Mozzarella and Tomato Slices</div>
+          <div class="table__row table__row--5">Turkey Melt</div>
+          <div class="table__row table__row--small table__row--6">Low-carb</div>
+          <div class="table__row table__row--small table__row--7"></div>
+        </div>
+        <div class="table__column" id="day-69">
+          <div class="table__row table__row--header">Day 69</div>
+          <div class="table__row table__row--1" data-background="">Bod•ē Shake</div>
+          <div class="table__row table__row--2">Grilled Steak (HC)</div>
+          <div class="table__row table__row--3" data-background="">Bod•ē Shake</div>
+          <div class="table__row table__row--4">Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray</div>
+          <div class="table__row table__row--5">Garlic Lime Chicken (HC)</div>
+          <div class="table__row table__row--small table__row--6">High-carb</div>
+          <div class="table__row table__row--small table__row--7"></div>
+        </div>
+        <div class="table__column" id="day-70">
+          <div class="table__row table__row--header">Day 70</div>
+          <div class="table__row table__row--5x"><span></span>Guilt-free day</div>
+          <div class="table__row table__row--med"><span></span>Print</div>
+        </div>
+      </div>
+      <footer class="dashboard__footer">
+        <div class="info-box">
+          <h2 class="info-box__header">Running out of products?</h2>
+          <p class="info-box__content">Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.</p>
+        </div>
+        <div class="info-box">
+          <h2 class="info-box__header">Bod•e Trainer in your pocket</h2>
+          <p class="info-box__content">Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.</p>
+        </div>
+        <div class="info-box">
+          <h2 class="info-box__header">Frequently Asked Questions</h2>
+          <p class="info-box__content">Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+
+
+
+
+
 
   <script src="scripts/main.js"></script>
 </body>

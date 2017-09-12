@@ -1,0 +1,65 @@
+// nav
+
+.nav {
+  background-color: $color-background-nav;
+  box-shadow: 0 4px 2px -2px $color-nav-shadow;
+  height: 5rem;
+
+  &__logo {
+    width: 7.5rem;
+    height: 5rem;
+    border-right: 1px solid $color-nav-shadow;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    max-width: $width-main-container;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: inline-block;
+    list-style: none;
+  }
+
+  &__link {
+    color: $color-font-nav;
+    font-size: .875em;
+    font-weight: bold;
+    letter-spacing: .2px;
+    line-height: 3rem;
+    padding: .875rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      border-bottom: 2px solid $color-theme;
+      bottom: .3rem;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      transition: width .15s linear;
+      width: 0;
+    }
+
+    &:hover::after {
+      width: 1.5625rem;
+    }
+
+    .active & {
+      color: $color-theme;
+
+      &::after {
+        width: 1.5625rem;
+      }
+    }
+  }
+
+  &__main {
+    padding-left: 1.25rem;
+    flex-grow: 1;
+  }
+}

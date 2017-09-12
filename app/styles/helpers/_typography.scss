@@ -1,0 +1,31 @@
+// typography
+
+// 'Helvetica Neue' Adobe commercial font
+// use fonts in order 'Liberation Sans', Arial, sans-serif
+
+@font-face {
+  font-family: 'Liberation Sans';
+  src: url('./../fonts/liberationsans-bold-webfont.woff2') format('woff2'),
+  url('./../fonts/liberationsans-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Liberation Sans';
+  src: url('./../fonts/liberationsans-regular-webfont.woff2') format('woff2'),
+  url('./../fonts/liberationsans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.title {
+  color: $color-font-main;
+  text-transform: uppercase;
+
+  &--legend {
+    font-size: .5625em;
+
+  }
+}
