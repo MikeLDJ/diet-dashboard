@@ -1,5 +1,25 @@
 // helpers
 
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin wavy-bg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAMUlEQVQYV2N89+7dfwYo+Pz5M4wJpnl5eeF8RphCkCJkCZAKZDHGhw8fgk1EV4RuCwBSUBc4rD5AZgAAAABJRU5ErkJggg==) repeat;
+}
+
 .hidden {
   display: none;
+}
+
+.center {
+  @include center;
+}
+
+.caret {
+  color: $color-icon;
+  font-size: .6em;
+  margin-left: .5rem;
 }
