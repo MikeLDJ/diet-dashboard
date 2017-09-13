@@ -46,7 +46,20 @@
     }
 
     &--active {
+      animation: dot .5s ease;
       background-color: $color-background-main;
+      transform-origin: left;
+      z-index: 2;
+
+      &.progress-bar__dot--active {
+        &:after {
+          animation: dotAfter .5s ease;
+          .progress-bar__item:first-of-type & {
+            animation: none;
+          }
+        }
+      }
+
     }
 
     &:after {
@@ -57,6 +70,7 @@
       right: 8px;
       position: absolute;
       width: 11px;
+      z-index: -1;
 
       .progress-bar__item:first-of-type & {
         width: 0;

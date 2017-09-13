@@ -16,5 +16,6 @@ html {
 
 main {
   background-color: $color-background-main;
+  min-height: calc(100vh - 5rem);
   padding: .625rem;
 }

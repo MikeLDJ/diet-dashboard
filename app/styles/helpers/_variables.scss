@@ -14,12 +14,27 @@ $color-nav-shadow: #e1e1e1;
 $color-border-table: #e9e9e9;
 
 $color-icon: #bababa;
+$color-icon-hover: #fff;
 
-$height-cell: 5.75rem;
+$height-cell: 5.7rem;
 $height-cell--small: 2.1875rem;
 
 $width-main-container: 61.125rem;
 
 @function calc-height($value1, $value2) {
   @return $value1 * $value2;
+}
+
+@keyframes dot {
+  50% {
+    border-color: $color-theme;
+    transform: scale(2) translateX(-50%);
+  }
+}
+
+@keyframes dotAfter {
+  50% {
+    height: 1px;
+    width: 5px;
+  }
 }

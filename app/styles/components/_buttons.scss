@@ -1,0 +1,32 @@
+// buttons
+
+.button {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  margin: .3rem 0;
+  height: 2.1rem;
+  line-height: 2rem;
+  padding-left: 1rem;
+  padding-right: .8rem;
+  border-radius: 5px;
+  border: 1px solid $color-icon;
+  position: relative;
+  transition: box-shadow .25s ease;
+
+  &--l-space {
+    padding-left: 2.5rem;
+  }
+
+  &--r-space {
+    padding-right: 1.8rem;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px 3px rgba($color-icon, .7);
+  }
+
+  + .button {
+    margin-left: .5rem;
+  }
+}

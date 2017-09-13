@@ -18,4 +18,24 @@
   &__body {
     margin-top: 1rem;
   }
+
+  &__footer {
+    column-count: 3;
+    column-fill: balance;
+    column-gap: 5.75rem;
+    column-rule: 1px outset $color-font-main;
+    margin: 3.2rem 0;
+
+    > div {
+      min-height: 10rem;
+    }
+
+    @media (max-width: 992px) {
+      columns: 1;
+      text-align: center;
+      max-width: 30rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }

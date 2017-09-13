@@ -1,0 +1,19 @@
+// info-box
+
+.info-box {
+  color: $color-font-main;
+
+  &__header {
+    font-size: 1.75em;
+    line-height: 1.75rem;
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+  }
+
+  &__content {
+    font-family: Arial, sans-serif;
+    font-size: .9375em;
+    line-height: 1.2rem;
+  }
+
+}

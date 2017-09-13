@@ -4,13 +4,18 @@
   + .icon {
     margin-left: .5rem;
   }
-  
+
   &__options-selector {
     display: inline-block;
     fill: $color-theme-secondary;
     position: relative;
     height: 2rem;
+    transition: fill .2s ease;
     width: 2rem;
+
+    &:hover {
+      fill: $color-theme;
+    }
 
     &--disabled {
       fill: $color-icon;
@@ -30,7 +35,7 @@
     position: relative;
 
     &::before {
-      content: url(./../images/icon-check-circle.svg);
+      background: url(./../images/icon-check-circle.svg);
       height: 1.125rem;
       width: 1.125rem;
       position: absolute;
@@ -40,25 +45,43 @@
   }
 
   &__check1 {
-    content: url(./../images/icon-check.svg);
+    background: url(./../images/icon-check.svg);
     height: .875rem;
     width: .875rem;
   }
 
   &__printer {
-    content: url(./../images/icon-printer.svg);
+    background: url(./../images/icon-printer.svg);
     height: 2rem;
     margin-right: .5rem;
     width: 2rem;
   }
 
   &__weight {
-    content: url(./../images/icon-weight.svg);
+    background: url(./../images/icon-weight.svg);
     height: .91rem;
     width: 1.75rem;
 
     &--disabled {
-      content: url(./../images/icon-weight-disabled.svg);
+      background: url(./../images/icon-weight-disabled.svg);
     }
+  }
+
+  &__ios {
+    background: url(./../images/icon-ios-apple.svg);
+    height: 1.3rem;
+    width: 1.3rem;
+    position: absolute;
+    top: .2rem;
+    left: .7rem;
+  }
+
+  &__android {
+    background: url(./../images/icon-android-os.svg);
+    height: 1.4rem;
+    width: 1.4rem;
+    position: absolute;
+    top: .2rem;
+    left: .7rem;
   }
 }

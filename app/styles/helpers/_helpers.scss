@@ -23,3 +23,37 @@
   font-size: .6em;
   margin-left: .5rem;
 }
+
+.row-aside {
+  color: $color-theme;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  opacity: .5;
+  transform-origin: left;
+  transform: translateY(-50%) scale(1.4);
+}
+
+.img-ins {
+  position: relative;
+
+  &::after {
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: '';
+    left: 0;
+    height: 80%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__cup1::after {
+    background: url(./../images/cup1.png) no-repeat center;
+  }
+
+  &__cup2::after {
+    background: url(./../images/cup2.png) no-repeat center;
+  }
+
+}

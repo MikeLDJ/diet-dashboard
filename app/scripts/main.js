@@ -1,4 +1,9 @@
 (function() {
+  const blankHrefs = document.querySelectorAll('[href="#"]');
+  for (const href of blankHrefs) {
+    href.addEventListener('click', event => event.preventDefault());
+  };
+
   const classSwitcher = (elements, newClass) => {
     const elementList = document.querySelectorAll(elements);
     for (const item of elementList) {
@@ -62,13 +67,14 @@
 
   const tableMaintainer = (function() {
     let windowWidth = window.innerWidth;
-    const rowsNo = 7;
+    const headerRows = document.querySelectorAll('.table__column--lead .table__row--header').length;
+    const rowsNo = document.querySelectorAll('.table__column--lead .table__row').length - headerRows;
     const rows = [];
     const rowsContent = [];
 
     function checkWidth() {
       windowWidth = window.innerWidth;
-      tableCaption();
+      setTitleRows();
     };
 
     function generateContent(array) {
@@ -84,7 +90,7 @@
       rowsContent.push(generateContent(rows[i]));
     }
 
-    function tableCaption() {
+    function setTitleRows() {
       for (const index of rows.keys()) {
         if (windowWidth < 992) {
           for (let i = 0; i < rowsNo; i++) {
@@ -114,7 +120,7 @@
       };
     };
 
-    tableCaption();
+    setTitleRows();
     window.addEventListener('resize', debounce(checkWidth));
   })();
 })();

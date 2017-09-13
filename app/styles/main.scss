@@ -5,42 +5,16 @@
 @import 'helpers/helpers';
 @import 'base/base';
 
-@import 'components/nav';
+@import 'components/arrows';
+@import 'components/buttons';
+@import 'components/icons';
 @import 'components/dropdown';
+
+@import 'components/nav';
 @import 'components/progress-bar';
 @import 'components/period-selector';
 @import 'components/options-selector';
-@import 'components/arrows';
-@import 'components/icons';
 @import 'components/table';
+@import 'components/info-box';
 
 @import 'layout/dashboard';
-
-
-
-
-
-
-//
-// h1 {
-//   &:after {
-//     background: #cba;
-//     content: 'css works!!!';
-//     display: block;
-//   }
-// }
-//
-// .el {
-//   &__item {
-//     font-size: 2em;
-//     background-color: orangered;
-//   }
-//
-//   height: 180px;
-//   transition: all 1s ease;
-//   overflow: hidden;
-//
-//   &.collapsed {
-//     height: 0;
-//   }
-// }

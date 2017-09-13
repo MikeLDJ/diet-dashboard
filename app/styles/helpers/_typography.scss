@@ -52,33 +52,33 @@
   letter-spacing: -1px;
   position: absolute;
   text-transform: uppercase;
-  transform: rotate(-180deg);
-  width: 100%;
-  writing-mode: vertical-rl;
+  transform: rotate(-90deg) translateY(-8rem);
+  transform-origin: center;
+  width: 24rem;
 
   &__container {
     position: relative;
 
     &.vertical-text__container { // double class to override other styles
+      padding-left: 0;
       padding-top: 0;
     }
   }
 
   @media (max-width: 992px) {
-    transform: none;
-    writing-mode: horizontal-tb;
     flex-direction: column;
+    transform: none;
+    width: 100%;
   }
 }
 
 .smiley-face {
   &::before {
-    content: url(../images/icon-face.svg);
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    content: '';
+    background: url(../images/icon-face.svg) no-repeat;
+    margin-right: 2rem;
     line-height: 2rem;
     height: 2rem;
-    transform: rotate(180deg);
     width: 2rem;
 
     @media (max-width: 992px) {
