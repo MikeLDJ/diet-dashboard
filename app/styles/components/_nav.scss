@@ -5,10 +5,21 @@
   box-shadow: 0 4px 2px -2px $color-nav-shadow;
   height: 5rem;
 
+  @media (max-width: 992px) {
+    height: auto;
+  }
+
   &__logo {
     width: 7.5rem;
     height: 5rem;
     border-right: 1px solid $color-nav-shadow;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      border: none;
+    }
   }
 
   &__container {
@@ -16,6 +27,10 @@
     align-items: center;
     max-width: $width-main-container;
     margin: 0 auto;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -33,6 +48,10 @@
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
+
+    @media (max-width: 479px) {
+      font-size: .8em;
+    }
 
     &::after {
       content: '';
@@ -61,5 +80,9 @@
   &__main {
     padding-left: 1.25rem;
     flex-grow: 1;
+
+    @media (max-width: 479px) {
+      padding-left: 0;
+    }
   }
 }

@@ -8,12 +8,24 @@
   line-height: 1.35;
   letter-spacing: .5px;
 
+  @media (max-width: 992px) {
+    flex-direction: column;
+    max-width: 480px;
+    margin: auto;
+  }
+
   &__column {
     flex-grow: 30;
     flex-basis: 0;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
 
     + .table__column {
       border-left: 2px solid $color-border-table;
+
+      @media (max-width: 992px) {
+        border: 2px solid $color-border-table;
+      }
     }
 
     &--lead {
@@ -24,6 +36,32 @@
         @include center;
         @include wavy-bg;
       }
+
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+
+    &--active {
+      &.table__column--active {
+        border-bottom-color: $color-theme;
+        border-left-color: $color-theme;
+        border-top-color: $color-theme;
+      }
+
+      + .table__column {
+        border-left-color: $color-theme;
+      }
+
+      @media (max-width: 992px) {
+        &.table__column--active {
+          border: 2px solid $color-theme;
+        }
+
+        + .table__column {
+          border-left-color: $color-border-table;
+        }
+      }
     }
   }
 
@@ -31,6 +69,12 @@
     background: $color-background-nav;
     height: $height-cell;
     padding: .6rem .1rem .6rem .8rem;
+    position: relative;
+
+    @media (max-width: 992px) {
+      text-align: center;
+      padding: 2% 0;
+    }
 
     + .table__row {
       border-top: 2px solid $color-border-table;
@@ -66,12 +110,25 @@
       }
     }
 
-    &--5x {
+    &--height5x {
       height: calc-height(5, $height-cell);
+
+      @media (max-width: 992px) {
+        height: calc-height(2, $height-cell);
+      }
     }
   }
 }
 
+.row-aside {
+  color: $color-theme;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  opacity: .3;
+  transform-origin: left;
+  transform: translateY(-50%) scale(1.4);
+}
 
 .img-ins {
   position: relative;
@@ -88,11 +145,11 @@
   }
 
   &__cup1::after {
-    background: url(./../images/cup1.png) center;
+    background: url(./../images/cup1.png) no-repeat center;
   }
 
   &__cup2::after {
-    background: url(./../images/cup2.png) center;
+    background: url(./../images/cup2.png) no-repeat center;
   }
 
 }

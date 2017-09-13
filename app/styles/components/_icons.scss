@@ -1,6 +1,10 @@
 // icons
 
 .icon {
+  + .icon {
+    margin-left: .5rem;
+  }
+  
   &__options-selector {
     display: inline-block;
     fill: $color-theme-secondary;
@@ -33,6 +37,12 @@
       top: .6rem;
       right: .6rem;
     }
+  }
+
+  &__check1 {
+    content: url(./../images/icon-check.svg);
+    height: .875rem;
+    width: .875rem;
   }
 
   &__printer {

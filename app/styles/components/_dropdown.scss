@@ -6,6 +6,10 @@
   height: 3rem;
   max-width: 12rem;
 
+  @media (max-width: 992px) {
+    padding: 0;
+  }
+
   &__item {
     list-style: none;
     visibility: hidden;

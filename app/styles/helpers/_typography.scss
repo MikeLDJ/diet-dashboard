@@ -27,6 +27,9 @@
   &--legend {
     font-size: .5625em;
 
+    @media (max-width: 992px) {
+      text-align: center;
+    }
   }
 }
 
@@ -60,6 +63,12 @@
       padding-top: 0;
     }
   }
+
+  @media (max-width: 992px) {
+    transform: none;
+    writing-mode: horizontal-tb;
+    flex-direction: column;
+  }
 }
 
 .smiley-face {
@@ -72,5 +81,9 @@
     transform: rotate(180deg);
     width: 2rem;
 
+    @media (max-width: 992px) {
+      margin: 1rem;
+      transform: none;
+    }
   }
 }

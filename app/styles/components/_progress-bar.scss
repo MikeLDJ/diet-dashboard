@@ -7,6 +7,13 @@
   margin-top: 24px;
   padding: 0;
 
+  &__container {
+    @media (max-width: 992px) {
+      order: 2;
+      margin: 2rem auto 0;
+    }
+  }
+
   &__item {
     color: $color-font-main;
     display: inline-block;
